@@ -9,6 +9,7 @@
     "chalk-cli": "^2.0.0",
     "colors": "^1.1.2",
     "eyeglass": "^0.8.2",
+    "flickity": "^1.2.1",
     "jshint": "^2.9.2",
     "livereload": "^0.4.1",
     "minifyify": "^7.3.3",
