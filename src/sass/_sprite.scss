@@ -1,0 +1,44 @@
+%svg-common {
+	background: url("../img/sprite-fbb30fc6.svg") no-repeat;
+}
+
+.svg-facebook {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-facebook-dims {
+	width: 16px;
+	height: 16px;
+}
+
+.svg-googleplus {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-googleplus-dims {
+	width: 16px;
+	height: 16px;
+}
+
+.svg-linkedin {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.svg-linkedin-dims {
+	width: 16px;
+	height: 16px;
+}
+
+.svg-twitter {
+	@extend %svg-common;
+	background-position: 100% 100%;
+}
+
+.svg-twitter-dims {
+	width: 16px;
+	height: 16px;
+}
+

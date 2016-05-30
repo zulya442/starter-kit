@@ -1,0 +1,58 @@
+/*! responsive-nav.js 1.0.39 by @viljamis */
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+  li{
+  width: 100%;
+  display: block;
+    a{
+      background: $color-background;
+      padding: .7em 0;
+      display: block;
+      text-align: center;
+      border-bottom: 3px solid $color-border;
+
+    }
+  }
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.nav-toggle {
+  @include hide-text;
+  width: 36px;
+  height: 36px;
+  display: block;
+  background-color:gray;
+  background-image: url(../img/hamburger.svg);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
